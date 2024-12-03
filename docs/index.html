@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body BGCOLOR="#e3d3e2">
+		<h1 align="center"><img src="https://png.pngtree.com/png-clipart/20230216/ourmid/pngtree-purple-yarn-png-image_6603228.png" style="float:left; filter: brightness(75%);" width="75px" height="75px">
+		The Crochet Corner <img src="https://png.pngtree.com/png-clipart/20230216/ourmid/pngtree-purple-yarn-png-image_6603228.png" style="float:right; filter: brightness(75%);" width="75px" height="75px"></h1>
+		<div class="navbar" id="myNavbar"  align="center">
+		  <a href="#" class="active">Home</a>
+		  <a href="#" onclick="replaceLocationOne()">About Me</a>
+		  <a href="#" onclick="replaceLocationTwo()">Basic Stitches</a>
+		  <a href="#" onclick="replaceLocationThree()">Intermediate Stitches</a>
+		  <a href="#" onclick="replaceLocationFour()">Advanced Stitches</a>
+		  <a href="#" onclick="replaceLocationFive()">Projects</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<div class="backgroundone">
+		<br>
+		<h2 align="center">Welcome</h2>
+		<p class="home">
+		Welcome to my Crochet Corner! Here is a place where you can learn about different stitches and gather inspiration for a first
+		or new project. I have listed 3 different types of stitches and have included links to different project ideas. On the about me 
+		page you can learn a little about my crochet journey and see some of my projects and at the bottom there is a section to tell me
+		about your journey and I will add it to the about me page! If you find these projects and stitches to be helpful please submit
+		pictures of your completed projects to the about page!
+		</p>
+		<img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-crocheting-clipart-knitting-needles-and-skeins-with-yarn-ball-in-bowl-png-image_6802503.png">
+		<img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-knit-clipart-pile-of-colorful-yarn-and-a-crochet-knitting-needle-vector-png-image_6802761.png" align="right">
+		
+		<br>
+		<button onclick="goBack()">Back</button>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myNavbar");
+				if (x.className === "navbar") {
+				x.className += " responsive";
+				} else {
+				x.className = "navbar";
+				}
+			}
+			
+			function goBack() {
+			  history.back();
+			}
+			
+			function replaceLocationOne() {
+				// Replace the current location
+				// with new location
+				let newloc = "about.html";
+				window.location.replace(newloc);
+			}
+			function replaceLocationTwo() {
+				// Replace the current location
+				// with new location
+				let newloc = "stitches.html";
+				window.location.replace(newloc);
+			}
+			function replaceLocationThree() {
+				// Replace the current location
+				// with new location
+				let newloc = "stitchestwo.html";
+				window.location.replace(newloc);
+			}
+			function replaceLocationFour() {
+				// Replace the current location
+				// with new location
+				let newloc = "stitchesthree.html";
+				window.location.replace(newloc);
+			}
+			function replaceLocationFive() {
+				// Replace the current location
+				// with new location
+				let newloc = "projects.html";
+				window.location.replace(newloc);
+			}
+		</script>
+	</body>
+</html>
